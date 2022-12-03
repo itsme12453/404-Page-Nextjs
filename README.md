@@ -7,3 +7,5 @@
 **How I Did It:**
 - Used flexbox for image and text.
 - Used a `media` query to make it responsive by changing the `flex-direction` from `row` to `column`.
+
+Used Next.js because I could -.-

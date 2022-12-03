@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Fira Code', monospace;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +13,71 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.content {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+img {
+  min-width: 300px;
+  width: 500px;
+}
+
+#flex-text {
+  word-wrap: break-word;
+  width: 400px;
+  color: #333333;
+}
+
+#paragraph {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 50%;
+  height: 45px;
+  background-color: #333333;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+
+  font-family: 'Fira Code', monospace;
+}
+
+button:hover {
+  background-color: #4e4e4e;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column !important;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  #paragraph {
+    width: auto;
+  }
 }
